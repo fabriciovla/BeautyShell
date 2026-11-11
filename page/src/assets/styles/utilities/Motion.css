@@ -1,0 +1,29 @@
+@layer utilities {
+  .opacity-0 { opacity: 0; }
+  .opacity-45 { opacity: 0.45; }
+  .opacity-100 { opacity: 1; }
+  .rotate-0 { rotate: 0deg; }
+  .rotate-90 { rotate: 90deg; }
+  .translate-none { translate: 0 0; }
+  .translate-y-12 { translate: 0 12px; }
+  .center-x { translate: -50% 0; }
+  .origin-0 { transform-origin: 0 0; }
+
+  .transition-button { transition: background-color 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out, box-shadow 150ms ease-out, scale 150ms ease-out; }
+  .transition-color { transition: color 150ms ease-out; }
+  .transition-colors { transition: background-color 150ms ease-out, color 150ms ease-out; }
+  .transition-tab { transition: background-color 150ms ease-out, box-shadow 150ms ease-out, color 150ms ease-out; }
+  .transition-border { transition: border-color 150ms ease-out; }
+  .transition-card { transition: border-color 150ms ease-out, background-color 150ms ease-out, box-shadow 150ms ease-out; }
+  .transition-opacity { transition: opacity 150ms ease-out; }
+  .transition-opacity-slow { transition: opacity 400ms ease-out; }
+  .transition-chevron { transition: opacity 150ms ease-out, rotate 200ms var(--ease); }
+  .transition-translate { transition: translate 400ms var(--ease); }
+  .transition-scale { transition: scale 400ms var(--ease); }
+  .transition-notice { transition: opacity 200ms ease-out, translate 300ms var(--ease); }
+
+  .animate-blink { animation: blink 1.1s steps(1) infinite; }
+  .spinner { border: 1.5px solid rgb(0 0 0 / 15%); border-top-color: var(--ink); border-radius: 50%; animation: spin 900ms linear infinite; }
+
+  .press:active { scale: 0.96; }
+}

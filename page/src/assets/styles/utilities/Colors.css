@@ -1,0 +1,48 @@
+@layer utilities {
+  .text-ink { color: var(--ink); }
+  .text-ink-72 { color: rgb(20 20 20 / 72%); }
+  .text-soft { color: var(--text-2); }
+  .text-faint { color: var(--text-3); }
+  .text-line-strong { color: var(--line-strong); }
+  .text-white { color: #fff; }
+  .text-white-62 { color: rgb(255 255 255 / 62%); }
+  .text-white-70 { color: rgb(255 255 255 / 70%); }
+  .fill-current { fill: currentColor; }
+
+  .bg-transparent { background: transparent; }
+  .bg-ink { background: var(--ink); }
+  .bg-paper { background: var(--paper); }
+  .bg-paper-78 { background: rgb(246 246 245 / 78%); }
+  .bg-surface { background: var(--surface); }
+  .bg-white { background: #fff; }
+  .bg-white-14 { background: rgb(255 255 255 / 14%); }
+  .bg-white-30 { background: rgb(255 255 255 / 30%); }
+  .bg-white-70 { background: rgb(255 255 255 / 70%); }
+  .bg-white-85 { background: rgb(255 255 255 / 85%); }
+  .bg-white-88 { background: rgb(255 255 255 / 88%); }
+  .bg-white-90 { background: rgb(255 255 255 / 90%); }
+  .bg-white-92 { background: rgb(250 250 250 / 92%); }
+  .bg-black-9 { background: rgb(0 0 0 / 9%); }
+  .bg-black-10 { background: rgb(0 0 0 / 10%); }
+  .bg-black-12 { background: rgb(0 0 0 / 12%); }
+  .bg-black-70 { background: rgb(0 0 0 / 70%); }
+  .bg-dark-82 { background: rgb(20 20 31 / 88%); }
+
+  .bg-wallpaper {
+    background:
+      radial-gradient(50% 70% at 18% 22%, rgb(255 255 255 / 88%), transparent 68%),
+      radial-gradient(55% 50% at 84% 85%, rgb(255 255 255 / 70%), transparent 70%),
+      linear-gradient(145deg, #f3f3fc 0%, #e8e8f7 52%, #efeffa 100%);
+  }
+  .bg-glass {
+    background:
+      linear-gradient(180deg, rgb(255 255 255 / 82%), rgb(243 243 252 / 68%)),
+      rgb(255 255 255 / 75%);
+  }
+  .bg-shot-card { background: linear-gradient(160deg, rgb(20 20 45 / 5%), rgb(20 20 45 / 9%)); }
+
+  .blur-16 { backdrop-filter: blur(16px); }
+  .blur-header { backdrop-filter: blur(20px) saturate(1.4); }
+  .blur-notice { backdrop-filter: blur(24px) saturate(1.4); }
+  .blur-glass { backdrop-filter: blur(30px) saturate(1.3); }
+}

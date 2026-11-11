@@ -1,0 +1,23 @@
+@layer utilities {
+  .shadow-sm { box-shadow: var(--shadow-sm); }
+  .shadow-lg { box-shadow: var(--shadow-lg); }
+  .shadow-button { box-shadow: 0 1px 2px rgb(0 0 0 / 20%), inset 0 1px 0 rgb(255 255 255 / 12%); }
+  .shadow-card { box-shadow: var(--shadow-sm), 0 0 0 1px var(--line); }
+  .shadow-window {
+    box-shadow:
+      0 24px 60px rgb(20 20 45 / 12%),
+      0 6px 20px rgb(20 20 45 / 6%),
+      0 0 0 1px rgb(20 20 45 / 8%),
+      inset 0 1px 0 rgb(255 255 255 / 90%);
+  }
+  .shadow-mini { box-shadow: 0 20px 50px rgb(20 20 45 / 14%), inset 0 1px 0 rgb(255 255 255 / 80%); }
+  .shadow-mini-on { box-shadow: 0 1px 3px rgb(20 20 45 / 8%); }
+  .shadow-folder { box-shadow: 0 1px 3px rgb(20 20 45 / 4%), 0 0 0 1px rgb(20 20 45 / 6%), inset 0 1px 0 rgb(255 255 255 / 70%); }
+  .shadow-tab { box-shadow: 0 1px 3px rgb(20 20 45 / 7%), 0 0 0 1px var(--line); }
+  .shadow-pane { box-shadow: 0 2px 6px rgb(20 20 45 / 5%), 0 0 0 1px var(--line); }
+  .shadow-bar { box-shadow: 0 8px 24px rgb(20 20 45 / 22%), inset 0 0 0 1px rgb(255 255 255 / 12%); }
+  .shadow-label { box-shadow: 0 6px 18px rgb(20 20 45 / 20%), inset 0 0 0 1px rgb(255 255 255 / 12%); }
+  .shadow-notice { box-shadow: var(--shadow-lg), 0 0 0 1px var(--line); }
+  .shadow-inset-line { box-shadow: inset 0 0 0 1px var(--line); }
+  .shadow-selection { box-shadow: 0 0 0 1.5px rgb(255 255 255 / 92%), 0 0 0 200vmax rgb(20 20 35 / 32%); }
+}

@@ -1,0 +1,11 @@
+export const folderBox = "shrink-0 p-4 border border-white-55 rounded-14 bg-white-70 shadow-folder";
+export const folderHead = "flex items-center gap-6 w-full h-26 pr-8 pl-12 rounded-8 text-faint text-11-5 font-600 transition-color";
+export const tabBox = "group relative flex items-center gap-10 min-h-34 py-5 pr-6 pl-12 rounded-10 cursor-pointer transition-tab focus-ring-in";
+export const tabState = (on) => (on ? "bg-white shadow-tab text-ink" : "text-ink-72 hover:bg-white-70 hover:text-ink");
+export const newTabBox = "flex shrink-0 items-center gap-10 w-full h-34 pr-10 pl-17 rounded-10 text-soft font-500 transition-colors";
+export const stageTab = "grid cols-panes gap-6 min-w-0 min-h-0 tablet:cols-1";
+export const paneBox = "flex flex-col min-w-0 min-h-0 overflow-hidden rounded-10 bg-white shadow-pane cursor-text";
+export const paneHead = "flex shrink-0 items-center gap-8 h-40 px-14 text-ink text-12-5 font-500";
+export const termBox = "flex-1 min-h-0 pt-4 px-16 pb-16 overflow-y-auto no-scrollbar text-ink font-mono text-term leading-1-75 terminal-text";
+export const focusDot = (on) => ["w-6 h-6 rounded-full bg-ink transition-opacity", on ? "opacity-100" : "opacity-0"];
+export const cursorBlock = (on, typing) => ["cursor-block", { "bg-ink": on, "animate-blink": on && typing }];

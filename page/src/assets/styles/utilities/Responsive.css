@@ -1,0 +1,58 @@
+@layer utilities {
+  @media (max-width: 900px) {
+    .content-width { width: min(100% - 48px, 760px); }
+
+    .tablet\:flex { display: flex; }
+    .tablet\:hidden { display: none; }
+    .tablet\:static { position: static; }
+    .tablet\:cols-1 { grid-template-columns: minmax(0, 1fr); }
+    .tablet\:cols-sidebar-small { grid-template-columns: 210px minmax(0, 1fr); }
+    .tablet\:max-h-none { max-height: none; }
+    .tablet\:px-24 { padding-inline: 24px; }
+    .tablet\:py-12 { padding-block: 12px; }
+    .tablet\:pt-28 { padding-top: 28px; }
+    .tablet\:pb-72 { padding-bottom: 72px; }
+    .tablet\:border-r-0 { border-right: 0; }
+    .tablet\:border-b { border-bottom: 1px solid var(--line); }
+  }
+
+  @media (max-width: 640px) {
+    .content-width { width: calc(100% - 32px); }
+
+    .phone\:hidden { display: none; }
+    .phone\:flex-col { flex-direction: column; }
+    .phone\:flex-wrap { flex-wrap: wrap; }
+    .phone\:items-start { align-items: flex-start; }
+    .phone\:self-stretch { align-self: stretch; }
+    .phone\:basis-notice { flex-basis: calc(100% - 52px); }
+    .phone\:gap-14 { gap: 14px; }
+    .phone\:gap-28 { gap: 28px; }
+    .phone\:cols-1 { grid-template-columns: minmax(0, 1fr); }
+    .phone\:bottom-16 { bottom: 16px; }
+    .phone\:w-full { width: 100%; }
+    .phone\:h-58 { height: 58px; }
+    .phone\:h-240 { height: 240px; }
+    .phone\:h-340 { height: 340px; }
+    .phone\:p-16 { padding: 16px; }
+    .phone\:px-10 { padding-inline: 10px; }
+    .phone\:px-16 { padding-inline: 16px; }
+    .phone\:px-22 { padding-inline: 22px; }
+    .phone\:pt-24 { padding-top: 24px; }
+    .phone\:pt-36 { padding-top: 36px; }
+    .phone\:pt-40 { padding-top: 40px; }
+    .phone\:pt-48 { padding-top: 48px; }
+    .phone\:pt-56 { padding-top: 56px; }
+    .phone\:pb-26 { padding-bottom: 26px; }
+    .phone\:pb-28 { padding-bottom: 28px; }
+    .phone\:pb-72 { padding-bottom: 72px; }
+    .phone\:mt-44 { margin-top: 44px; }
+    .phone\:text-16 { font-size: 16px; }
+    .phone\:text-article-small { font-size: clamp(34px, 9vw, 44px); }
+    .phone\:nowrap { white-space: nowrap; }
+    .phone\:rounded-18 { border-radius: 18px; }
+  }
+
+  @media (max-width: 440px) {
+    .narrow\:hidden { display: none; }
+  }
+}

@@ -1,0 +1,24 @@
+@layer utilities {
+  @media (hover: hover) {
+    .hover\:bg-ink-soft:hover { background: #2a2a2a; }
+    .hover\:bg-white-45:hover { background: rgb(255 255 255 / 45%); }
+    .hover\:bg-black-4-5:hover { background: rgb(0 0 0 / 4.5%); }
+    .hover\:bg-black-5:hover { background: rgb(0 0 0 / 5%); }
+    .hover\:bg-black-6:hover { background: rgb(0 0 0 / 6%); }
+    .hover\:text-ink:hover { color: var(--ink); }
+    .hover\:text-soft:hover { color: var(--text-2); }
+    .hover\:border-dark:hover { border-color: rgb(0 0 0 / 30%); }
+    .hover\:border-dark-28:hover { border-color: rgb(0 0 0 / 28%); }
+    .hover\:shadow-sm:hover { box-shadow: var(--shadow-sm); }
+
+    .group:hover .group-hover\:text-ink { color: var(--ink); }
+    .group:hover .group-hover\:opacity-100 { opacity: 1; }
+    .group:hover .group-hover\:hidden { display: none; }
+    .group:hover .group-hover\:grid { display: grid; }
+  }
+
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .group:hover .group-hover\:lift { translate: 0 -6px; }
+    .group:hover .group-hover\:grow { scale: 1.03; }
+  }
+}

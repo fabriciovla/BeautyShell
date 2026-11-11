@@ -1,0 +1,15 @@
+@layer utilities {
+  .cursor-pointer { cursor: pointer; }
+  .cursor-default { cursor: default; }
+  .cursor-text { cursor: text; }
+  .no-pointer { pointer-events: none; }
+  .select-none { user-select: none; }
+
+  .focus-ring:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  .focus-ring-2:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .focus-ring-in:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+
+  .details-chevron { rotate: -90deg; transition: rotate 200ms var(--ease); }
+  details[open] > summary > .details-chevron { rotate: 0deg; }
+  details[open] > .open-mb-8 { margin-bottom: 8px; }
+}

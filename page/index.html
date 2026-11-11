@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f6f5" />
+    <script>
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("intro");
+    </script>
+    <link rel="apple-touch-icon" href="/BeautyAppsTouchIcon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps,arrow_back,arrow_forward,arrow_outward,chevron_right,close,code,crop,download,folder,help,keyboard_return,menu,menu_book,north_east,open_in_new,picture_in_picture_alt,rocket_launch,rounded_corner,search,smart_toy,splitscreen,terminal,tune,visibility,widgets&display=block"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      // Show each visitor the site in their language. Runs at the top of <body>, when the page's hreflang
+      // alternates are already in <head>. Arriving from another site: go to the page in the browser's
+      // language (or the one they chose last time). Moving inside the site: remember the language they're in.
+      (function () {
+        var lang = document.documentElement.lang;
+        if (!lang) return;
+        try {
+          if (document.referrer && new URL(document.referrer).origin === location.origin) {
+            localStorage.setItem("lang", lang);
+            return;
+          }
+          if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)) return;
+          var want = localStorage.getItem("lang");
+          if (!want) {
+            var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+            want = "en";
+            for (var i = 0; i < list.length; i++) {
+              var code = String(list[i]).slice(0, 2).toLowerCase();
+              if (code === "es" || code === "en") {
+                want = code;
+                break;
+              }
+            }
+          }
+          if (want === lang) return;
+          var alt = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
+          if (alt && alt.getAttribute("href") !== location.pathname) location.replace(alt.href);
+        } catch (e) {}
+      })();
+    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/Main.js"></script>
+  </body>
+</html>

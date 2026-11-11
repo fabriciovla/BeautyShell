@@ -1,0 +1,69 @@
+@layer utilities {
+  .p-0 { padding: 0; }
+  .p-3 { padding: 3px; }
+  .p-4 { padding: 4px; }
+  .p-6 { padding: 6px; }
+  .p-20 { padding: 20px; }
+  .p-showcase { padding: clamp(18px, 4.5vw, 56px) clamp(18px, 4.5vw, 56px) clamp(52px, 6vw, 72px); }
+
+  .px-5 { padding-inline: 5px; }
+  .px-6 { padding-inline: 6px; }
+  .px-8 { padding-inline: 8px; }
+  .px-11 { padding-inline: 11px; }
+  .px-12 { padding-inline: 12px; }
+  .px-13 { padding-inline: 13px; }
+  .px-14 { padding-inline: 14px; }
+  .px-15 { padding-inline: 15px; }
+  .px-16 { padding-inline: 16px; }
+  .px-18 { padding-inline: 18px; }
+  .px-20 { padding-inline: 20px; }
+  .px-26 { padding-inline: 26px; }
+  .px-30 { padding-inline: 30px; }
+  .px-36 { padding-inline: 36px; }
+  .px-48 { padding-inline: 48px; }
+  .px-8p { padding-inline: 8%; }
+
+  .py-4 { padding-block: 4px; }
+  .py-5 { padding-block: 5px; }
+  .py-7 { padding-block: 7px; }
+  .py-8 { padding-block: 8px; }
+  .py-14 { padding-block: 14px; }
+  .py-18 { padding-block: 18px; }
+  .py-26 { padding-block: 26px; }
+
+  .pt-4 { padding-top: 4px; }
+  .pt-5 { padding-top: 5px; }
+  .pt-10 { padding-top: 10px; }
+  .pt-18 { padding-top: 18px; }
+  .pt-24 { padding-top: 24px; }
+  .pt-28 { padding-top: 28px; }
+  .pt-36 { padding-top: 36px; }
+  .pt-40 { padding-top: 40px; }
+  .pt-44 { padding-top: 44px; }
+  .pt-64 { padding-top: 64px; }
+  .pt-72 { padding-top: 72px; }
+  .pt-88 { padding-top: 88px; }
+  .pt-96 { padding-top: 96px; }
+
+  .pr-6 { padding-right: 6px; }
+  .pr-8 { padding-right: 8px; }
+  .pr-10 { padding-right: 10px; }
+  .pr-14 { padding-right: 14px; }
+  .pr-18 { padding-right: 18px; }
+
+  .pb-4 { padding-bottom: 4px; }
+  .pb-16 { padding-bottom: 16px; }
+  .pb-24 { padding-bottom: 24px; }
+  .pb-28 { padding-bottom: 28px; }
+  .pb-30 { padding-bottom: 30px; }
+  .pb-32 { padding-bottom: 32px; }
+  .pb-48 { padding-bottom: 48px; }
+  .pb-96 { padding-bottom: 96px; }
+  .pb-112 { padding-bottom: 112px; }
+
+  .pl-7 { padding-left: 7px; }
+  .pl-12 { padding-left: 12px; }
+  .pl-17 { padding-left: 17px; }
+  .pl-20 { padding-left: 20px; }
+  .pl-1-25em { padding-left: 1.25em; }
+}

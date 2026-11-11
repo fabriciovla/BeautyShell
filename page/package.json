@@ -1,0 +1,24 @@
+{
+  "name": "beauty-shell-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite-ssg build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@unhead/vue": "^2.1.17",
+    "gsap": "^3.15.1",
+    "vue": "^3.5.44",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "github-slugger": "^2.0.0",
+    "markdown-it-anchor": "^10.0.0",
+    "unplugin-vue-markdown": "^32.1.1",
+    "vite": "^8.3.5",
+    "vite-ssg": "^28.3.0"
+  }
+}
