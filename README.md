@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" width="96" alt="Beauty Shell">
+  <img src="docs/logo.png" width="96" alt="Beauty Shell">
 </p>
 
 <h1 align="center">Beauty Shell</h1>
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot.webp" alt="Beauty Shell with tabs grouped by folder and split panes">
+  <img src="docs/screenshot.webp" alt="Beauty Shell with tabs grouped by folder and split panes">
 </p>
 
 ## Features
