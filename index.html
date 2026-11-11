@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Shell</title>
+  </head>
+  <body>
+    <div id="app" data-tauri-drag-region>
+      <aside id="sidebar">
+        <div id="sb-list">
+          <nav id="sessions"></nav>
+          <button id="btn-new" class="sb-add" title="New terminal (Ctrl+T) · right-click to pick a shell or folder"></button>
+        </div>
+        <footer class="sb-foot">
+          <button id="btn-settings" class="sb-foot-btn" title="Settings (Ctrl+,)"></button>
+          <button id="btn-pin" class="icon-btn" title="Hide or pin the sidebar (Ctrl+Shift+B)"></button>
+        </footer>
+        <div id="sb-resize" title="Drag to change the width"></div>
+      </aside>
+      <header id="tabstrip" data-tauri-drag-region></header>
+      <main id="stage" data-tauri-drag-region>
+        <div id="drop-hint"></div>
+        <nav id="tab-dots" aria-label="Terminals" hidden>
+          <span class="dots-thumb" aria-hidden="true"></span>
+          <span class="dots-list"></span>
+        </nav>
+        <div id="folder-dock" class="glass" hidden></div>
+        <div id="empty" data-tauri-drag-region hidden>
+          <section class="home-content" aria-label="Beauty Shell home">
+            <div class="home-brand">
+              <img class="home-logo" alt="" aria-hidden="true" />
+              <h1>Beauty Shell</h1>
+              <p>Open a terminal to get started.</p>
+            </div>
+            <nav class="home-actions" aria-label="Get started"></nav>
+            <section class="home-spaces" aria-label="Workspaces" hidden>
+              <h2>Workspaces</h2>
+              <div class="home-spaces-list"></div>
+            </section>
+          </section>
+        </div>
+      </main>
+      <section id="settings-page" hidden></section>
+    </div>
+
+    <div id="peek-zone"></div>
+
+    <div id="winctl">
+      <button data-win="min" title="Minimize"></button>
+      <button data-win="max" title="Maximize"></button>
+      <button data-win="close" class="danger" title="Close"></button>
+    </div>
+
+    <div id="menu" class="menu glass" hidden></div>
+    <div id="drag-ghost" class="glass" hidden></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+[package]
+name = "vidrio"
+version = "0.1.7"
+description = "A beautiful terminal for Windows"
+edition = "2021"
+
+[lib]
+name = "vidrio_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# "unstable" enables child webviews inside the window, used by the built-in browser (browser.rs).
+tauri = { version = "2", features = ["unstable"] }
+tauri-plugin-clipboard-manager = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-global-shortcut = "2"
+portable-pty = "0.9"
+tiny_http = "0.12"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri-plugin-updater = "2"
+tauri-plugin-process = "2"
+
+# Page snapshots for the built-in browser (browser_snapshot in browser.rs) call WebView2 directly.
+[target.'cfg(windows)'.dependencies]
+webview2-com = "0.39"
+windows = { version = "0.62", features = ["Win32_Foundation", "Win32_Globalization", "Win32_System_Com", "Win32_System_Com_StructuredStorage"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+strip = true
+panic = "abort"
