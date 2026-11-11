@@ -1,6 +1,6 @@
 [package]
 name = "vidrio"
-version = "0.1.7"
+version = "0.1.8"
 description = "A beautiful terminal for Windows"
 edition = "2021"
 
